@@ -184,7 +184,6 @@ function graficoUp(){
     grafic_univers = [[],[]];
     
     for(conta in contas){
-        console.log(contas[conta].numero)
         if (contas[conta].tipo == "Conta Corrente" ){
             grafic_corrent[0].push(contas[conta].numero);
             grafic_corrent[1].push(contas[conta].saldo);
@@ -218,7 +217,7 @@ function grafico(titulo,id,dado,ind){
             labels: dado[0],
             datasets: [{
                 label: titulo,
-                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                backgroundColor: 'rgba(0, 192, 0, 0.5)',
                 borderColor: 'rgba(75, 192, 192, 1)',
                 data: dado[1],
                 fill: true,
